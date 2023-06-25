@@ -1,0 +1,61 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %} Ajouter un users {% endblock %}
+
+{% block body %}
+
+<h1> Ajouter </h1>
+{% for message in app.flashes('success')%}
+<div class="flash-notice">
+{{message}}
+</div>
+{% endfor %}
+    {{ form_start(form) }}
+
+    <div class="forminput">
+    {{ form_label(form.email)}}
+    {{ form_widget(form.email)}}
+    </div>
+    <div class="forminput">
+      {{ form_label(form.roles)}}
+    {{ form_widget(form.roles)}}
+    </div>
+  
+ <div class="forminput">
+      {{ form_label(form.password)}}
+    {{ form_widget(form.password)}}
+    </div>
+  
+
+  <button type="submit" class="inscription">
+  inscription
+  </button>
+
+    {{ form_end(form) }}
+
+{% endblock %}
+{# 
+ <html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
+    <title>Création de compte</title>
+</head>
+<body>
+    
+    <img class="logo2" src="logo2.jpg" alt="">
+
+    <form action="" method="post">
+
+    <input type="text" name="email" placeholder="Nom">
+    <input type="text" name="roles" placeholder="roles">
+    <input type="password" name="password" placeholder="password">
+     
+    <input type="submit" class="inscription"> 
+ </form>
+</body>
+</html>
+#}

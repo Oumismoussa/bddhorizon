@@ -1,3 +1,9 @@
+# framework:
+#     mailer:
+#         dsn: '%env(MAILER_DSN)%'
 framework:
     mailer:
-        dsn: '%env(MAILER_DSN)%'
+        dsn: 'gmail+smtp://mtwbpro:akvnqhebvdtqenhn@smtp.gmail.com?encryption=ssl&auth_mode=login&from_address=mtwbpro@gmail.com'
+
+# PS : Génère un mdp pour l'adresse mail (https://support.google.com/mail/answer/185833?hl=fr#:~:text=Sous%20%22Connexion%20%C3%A0%20Google%22%2C,S%C3%A9lectionnez%20G%C3%A9n%C3%A9rer.)
+# Remplace les infos qu'il faut et "jiorljxldhdhyugy" par le mdp généré

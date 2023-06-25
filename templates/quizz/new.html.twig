@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Ajouter un article {% endblock %}
+
+{% block body %}
+
+<h1> Ajouter </h1>
+
+    {{ form_start(form) }}
+
+    <div class="form-group">
+    {{ form_label(form.theme)}}
+    {{ form_widget(form.theme)}}
+    </div>
+    <div class="form-group">
+      {{ form_label(form.title)}}
+    {{ form_widget(form.title)}}
+    </div>
+  <button class="btn-btn-primary">
+  ajouter
+  </button>
+
+    {{ form_end(form) }}
+
+{% endblock %}

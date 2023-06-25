@@ -1,0 +1,28 @@
+
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="{{ asset("css/style.css") }}">
+    <title>Création de compte</title>
+</head>
+<body>
+    
+    <img class="logo2" src="logo2.jpg" alt="">
+
+    <form action="" method="post">
+
+    <input type="text" name="nom" placeholder="Nom">
+    <input type="mail" name="mail" placeholder="Mail">
+     
+    <input type="submit" class="inscription"> 
+ </form>
+</body>
+</html>
+{% endblock %}
